@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="logo">
+    <img src="/img/logosemfundo.png" class="imgg">
+  </div>
+  <div class="card">
+    <h1>Entrar</h1>
+
+    <form action="/login" method="post">
+      <div id="msgError">
+        <div class="label-float">
+          <input type="text" name="email" id="email" required />
+          <label id="labelemail" for="email">Email</label>
+          <!--<div id="alert" class="hidden">Esse email não está cadastrado no nosso banco de dados</div>-->
+        </div>
+      </div>
+
+      <div class="label-float">
+        <input type="password" name="senha" id="senha" required />
+        <label id="labelSenha" for="senha">Senha</label>
+        <i class="bi bi-eye-fill" id="bnt" onclick="mostrarsenha()"></i>
+      </div>
+
+
+      <br>
+      <div class="justify-center">
+        <input type="submit" value="Entrar">
+      </div>
+    </form>
+
+
+    <!--<div class="justify-center">
+        <button id="mostrar-alerta">Entrar</button>
+        </div>
+        <div id="alerta" class="hidden">
+          <p>Email não cadastrado</p>
+        <button id="fechar-alerta">OK</button>
+      </div>-->
+
+    <div class="justify-centercad">
+
+    </div>
+    <div class="formas">
+      <p>
+        Não tem uma conta?
+        <a href="/cadastro">
+          Cadastre-se
+        </a>
+        <br>
+        <br>
+        Não sabe a senha?
+        <a href="#">
+          Alterar senha
+        </a>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<script src="/js/login.js"></script>
